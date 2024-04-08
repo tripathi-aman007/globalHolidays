@@ -1,0 +1,16 @@
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .resort-heading {
+    padding-top: 15px;
+  }
+
+  .destination-places {
+    padding-top: 40px;
+    padding-left: 4px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #carouselExampleIndicators {
+    max-height: 210px;
+  }
+}

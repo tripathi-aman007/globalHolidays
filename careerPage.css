@@ -1,0 +1,13 @@
+.jumbotron {
+  background-image: url('/images/careerPage.avif');
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+.why-join-us {
+  padding: 50px 0;
+}
+.feature-icon {
+  font-size: 3rem;
+  color: #007bff;
+} 
