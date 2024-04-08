@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+    <script src="/js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Home Page</title>
+  </head>
+  <body>
+    <!--  STARTING THE NAVBAR -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white fixed-top"
+      style="box-shadow: 0 14px 16px rgba(67, 3, 214, 0.1)"
+    >
+      <div class="container-fluid">
+        <!-- WEBSITE LOGO -->
+
+        <img
+          src="/images/website_logo.png"
+          alt="Logo"
+          width="300"
+          height="70"
+          class="d-inline-block align-top"
+        />
+
+        <!-- NAVIGATION BUTTON WHEN SCREEN SIZE IS SMALL -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                style="margin-left: 20px"
+                aria-current="page"
+                href="/html/index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/destination.html">Destinations</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/blog.html">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Membership</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Choose Resorts
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="/html/nationalResort.html"
+                    >National Resorts</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/html/internationalResort.html"
+                    >International Resorts</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Privileges</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/aboutUs.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/career.html">Career</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/html/queryForm.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- END OF THE NAVBAR -->
+
+    <!-- IMAGE CAROUSEL -->
+    <div class="container">
+      <!-- Carousel -->
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-ride="carousel"
+        data-interval="2500"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleIndicators"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <img
+              src="/images/slide1.png"
+              class="d-block w-100 img-fluid"
+              alt="Image-Slide-1"
+            />
+          </div>
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <img
+              src="/images/slide2.jpeg"
+              class="d-block w-100 img-fluid"
+              alt="Image-Slide-2"
+            />
+          </div>
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <img
+              src="/images/slide3.webp"
+              class="d-block w-100 img-fluid"
+              alt="Image-Slide-3"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END OF THE IMAGE CAROUSEL -->
+
+    <h1 class="text-center mt-4 presence">Our Presence</h1>
+
+    <!-- OUTLINING THE BEST -->
+    <div
+      class="container mb-3 mt-4"
+      style="box-shadow: 0 14px 16px 10px rgba(67, 3, 214, 0.1)"
+    >
+      <div class="row">
+        <div class="col text-black elevate-img">
+          <div class="p-4 text-center presence">
+            <img
+              src="/images/building.png"
+              alt="Logo 1"
+              class="img-fluid mb-2"
+            />
+            <p>Multiple Property in Every Destination</p>
+          </div>
+        </div>
+        <div class="col text-black elevate-img">
+          <div class="p-3 text-center presence">
+            <img src="/images/resort.png" alt="Logo 2" class="img-fluid mb-2" />
+            <p>Classic Resorts</p>
+          </div>
+        </div>
+        <div class="col text-black elevate-img">
+          <div class="p-3 text-center presence">
+            <img
+              src="/images/location.png"
+              alt="Logo 3"
+              class="mb-2 img-fluid"
+            />
+            <p>100+ Locations</p>
+          </div>
+        </div>
+        <div class="col text-black elevate-img">
+          <div class="p-3 text-center presence">
+            <img src="/images/season.png" alt="Logo 4" class="img-fluid mb-2" />
+            <p>No Seasonal Variation</p>
+          </div>
+        </div>
+        <div class="col text-black elevate-img">
+          <div class="p-3 text-center presence">
+            <img
+              src="/images/calendar.png"
+              alt="Logo 5"
+              class="img-fluid mb-2"
+            />
+            <p>Book Your Special Day With Loved Ones</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END  -->
+
+    <!-- DESTINATION -->
+
+    <div class="container parentDiv text-black bg-light">
+      <h1 class="text-center destination mb-4 pt-4">destinations</h1>
+      <p class="text-center p-2">
+        Embark on unforgettable adventures with our curated selection of holiday
+        destinations. From pristine beaches and lush forests to vibrant
+        cityscapes, each destination offers a unique blend of culture, beauty,
+        and excitement. Discover new horizons and create lasting memories with
+        your loved ones.
+      </p>
+      <p class="text-center">
+        Escape the hustle and bustle of everyday life and unwind in paradise.
+        Our handpicked holiday destinations offer serene settings, luxurious
+        accommodations, and world-class amenities. Whether you seek tranquility
+        by the sea, serenity in the mountains, or indulgence in the heart of the
+        city, we have the perfect getaway for you.
+      </p>
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div class="dest-img-container">
+              <img
+                class="dest-img img-fluid"
+                src="/images/dest-maldive.webp"
+                alt="Maldive Destination Image"
+              />
+              <div class="img-overlay">
+                <p class="overlay-text">Maldives ♡</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="dest-img-container">
+              <img
+                class="dest-img img-fluid"
+                src="/images/dest-bali.png"
+                alt="Maldive Destination Image"
+              />
+              <div class="img-overlay">
+                <p class="overlay-text">Bali ♡</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="dest-img-container">
+              <img
+                class="dest-img img-fluid"
+                src="/images/dest-dubai.webp"
+                alt="Maldive Destination Image"
+              />
+              <div class="img-overlay">
+                <p class="overlay-text">Dubai ♡</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="dest-img-container">
+              <img
+                class="dest-img img-fluid"
+                src="/images/dest-singapore.webp"
+                alt="Maldive Destination Image"
+              />
+              <div class="img-overlay">
+                <p class="overlay-text">Singapore ♡</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="dest-img-container">
+              <img
+                class="dest-img img-fluid"
+                src="/images/dest-goa.jpeg"
+                alt="Maldive Destination Image"
+              />
+              <div class="img-overlay">
+                <p class="overlay-text">Goa ♡</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="dest-img-container">
+              <img
+                class="dest-img img-fluid"
+                src="/images/dest-delhi.jpeg"
+                alt="Maldive Destination Image"
+              />
+              <div class="img-overlay">
+                <p class="overlay-text">Delhi ♡</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="dest-img-container">
+              <img
+                class="dest-img img-fluid"
+                src="/images/dest-ladakh.png"
+                alt="Maldive Destination Image"
+              />
+              <div class="img-overlay">
+                <p class="overlay-text">Leh Ladakh ♡</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="dest-img-container">
+              <img
+                class="dest-img img-fluid"
+                src="/images/dest-kolkata.jpeg"
+                alt="Maldive Destination Image"
+              />
+              <div class="img-overlay">
+                <p class="overlay-text">Kolkata ♡</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="dest-img-container">
+              <img
+                class="dest-img img-fluid"
+                src="/images/dest-mussoorie.jpeg"
+                alt="Maldive Destination Image"
+              />
+              <div class="img-overlay">
+                <p class="overlay-text">Mussoorie ♡</p>
+              </div>
+            </div>
+          </div>
+          <div class="container mt-4">
+            <div class="row justify-content-center">
+              <div class="col-md-2 mb-4">
+                <div style="max-width: 200px">
+                  <a
+                    href="/html/destination.html"
+                    class="btn btn-primary w-100 explore-btn"
+                    >Explore More...</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END DESTINATION -->
+
+    <!-- EXPERIENCES -->
+    <div class="container parentDiv text-black bg-light mt-16">
+      <h1 class="text-center destination mb-4 pt-4">experiences</h1>
+      <p class="text-center p-2">
+        We had good time and created happy-adventerous moments like wildlife,
+        bungee jumping, snowbike riding and experienced magnificent beauty in
+        Houseboats. Our holidays are serene with new excitements, catering to
+        create an extraordinary experience at your vacation to enjoy excessively
+        for years.
+      </p>
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div>
+              <img
+                class="dest-img img-fluid"
+                src="/images/wildlife-exp.jpeg"
+                alt="Maldive Destination Image"
+              />
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div>
+              <img
+                class="dest-img img-fluid"
+                src="/images/exp-bungy.jpeg"
+                alt="Maldive Destination Image"
+              />
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div>
+              <img
+                class="dest-img img-fluid"
+                src="/images/exp-snowboard.avif"
+                alt="Maldive Destination Image"
+              />
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div>
+              <img
+                class="dest-img img-fluid"
+                src="/images/exp-skiing.webp"
+                alt="Maldive Destination Image"
+              />
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div>
+              <img
+                class="dest-img img-fluid"
+                src="/images/exp-2.jpeg"
+                alt="Maldive Destination Image"
+              />
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div>
+              <img
+                class="dest-img img-fluid"
+                src="/images/exp1.jpeg"
+                alt="Maldive Destination Image"
+              />
+            </div>
+          </div>
+          <div class="container mt-4">
+            <div class="row justify-content-center">
+              <div class="col-md-2 mb-4">
+                <div style="max-width: 200px">
+                  <a
+                    href="/html/blog.html"
+                    class="btn btn-primary w-100 explore-btn"
+                    >Explore More...</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END EXPERIENCE -->
+
+    <!-- SPECIAL OFFERS -->
+    <div class="container text-black mt-4">
+      <h1 class="text-center destination mb-4 pt-4">Special Offers</h1>
+      <p class="text-center p-2">
+        Explore our exclusive special offers and discounts to make your holiday
+        dreams a reality without breaking the bank.
+      </p>
+      <div class="container mt-4">
+        <div class="row">
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img
+                src="/images/beach-offer.png"
+                class="card-img-top"
+                alt="Beach Special Offer"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Beach Getaway</h5>
+                <p class="card-text">
+                  Escape to sun-kissed beaches and enjoy special discounts on
+                  beachfront resorts.
+                </p>
+                <a href="#" class="btn btn-primary explore-btn">View Offer</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img
+                src="/images/adventure-offer.jpeg"
+                class="card-img-top"
+                alt="Adventure Special Offer"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Adventure Package</h5>
+                <p class="card-text">
+                  Embark on thrilling adventures and save big with our adventure
+                  package deals.
+                </p>
+                <a href="#" class="btn btn-primary explore-btn">View Offer</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card">
+              <img
+                src="/images/family-offer.avif"
+                class="card-img-top"
+                alt="Family Special Offer"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Family Vacation</h5>
+                <p class="card-text">
+                  Create cherished family memories and enjoy special discounts
+                  on accommodations.
+                </p>
+                <a href="#" class="btn btn-primary explore-btn">View Offer</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END SPECIAL OFFERS -->
+
+    <!-- TESTIMONIES -->
+    <!-- END TESTIMONIES -->
+
+    <!-- FORM -->
+    <h1 class="text-center mt-4 pt-4 mb-0" id="contact">
+      Please Fill the Form
+    </h1>
+    <div class="container mt-0 pt-5 mb-5">
+      <div class="row justify-content-center">
+        <div
+          class="col-md-6"
+          style="box-shadow: 0 14px 16px 10px rgba(67, 3, 214, 0.1)"
+        >
+          <h3 class="text-center text-blue mb-4 mt-2">BECOME MEMBER</h3>
+          <form>
+            <div class="mb-3">
+              <label for="fullName" class="form-label">Full Name*</label>
+              <input
+                type="text"
+                class="form-control"
+                id="fullName"
+                placeholder="Enter your full name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email*</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="contactNo" class="form-label">Contact*</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="contactNo"
+                placeholder="Enter your contact number"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="city" class="form-label">City*</label>
+              <input
+                type="text"
+                class="form-control"
+                id="city"
+                placeholder="Enter your city"
+                required
+              />
+            </div>
+            <div class="text-center mb-2">
+              <button type="submit" class="btn btn-primary explore-btn">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- END FORM -->
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <h5>About Us</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
+              vestibulum, enim eu ullamcorper vehicula, neque massa tristique
+              nisi.
+            </p>
+          </div>
+          <div class="col-md-2">
+            <h5>Explore</h5>
+            <ul class="list-unstyled">
+              <li><a class="no-line" href="#">Destinations</a></li>
+              <li><a class="no-line" href="#">Packages</a></li>
+              <li><a class="no-line" href="#">Events</a></li>
+              <li><a class="no-line" href="#">Special Offers</a></li>
+            </ul>
+          </div>
+          <div class="col-md-2">
+            <h5>Agreements</h5>
+            <ul class="list-unstyled">
+              <li><a class="no-line" href="#">Privacy Policy</a></li>
+              <li><a class="no-line" href="#">Terms and Conditions</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Contact Information</h5>
+            <div class="row">
+              <div class="col">
+                <p>Customer Service:</p>
+                <p>123 Street Name, City, Country</p>
+                <p>Email: info@example.com</p>
+                <p>Phone: +1234567890</p>
+              </div>
+              <div class="col">
+                <p>Business Inquiries:</p>
+                <p>456 Street Name, City, Country</p>
+                <p>Email: sales@example.com</p>
+                <p>Phone: +9876543210</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <h5>Follow Us</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a style="text-decoration: none; color: blue" href="#"
+                  ><i class="fab fa-facebook"></i> Facebook</a
+                >
+              </li>
+              <li>
+                <a style="text-decoration: none; color: lightblue" href="#"
+                  ><i class="fab fa-twitter"></i> Twitter</a
+                >
+              </li>
+              <li>
+                <a style="text-decoration: none; color: lightpink" href="#"
+                  ><i class="fab fa-instagram"></i> Instagram</a
+                >
+              </li>
+              <li>
+                <a style="text-decoration: none; color: red" href="#"
+                  ><i class="fab fa-youtube"></i> YouTube</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr class="my-4" />
+        <div class="row">
+          <div class="col-md-6">
+            <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p>Privacy Policy | Terms of Service | Disclaimer</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- END FOOTER -->
+  </body>
+</html>
