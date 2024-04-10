@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terms and Conditions</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        background-color: #f8f9fa;
+        color: #444;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        margin-top: 50px;
+        margin-bottom: 40px;
+      }
+
+      h1 {
+        color: #007bff;
+      }
+
+      h2 {
+        color: #0056b3;
+        margin-top: 30px;
+      }
+
+      a {
+        color: #007bff;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      li {
+        margin-bottom: 5px;
+      }
+
+      p:last-child {
+        margin-bottom: 0;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <h1 class="mb-4 text-center" style="text-decoration: underline">
+        Terms and Conditions
+      </h1>
+
+      <h2>1. Introduction</h2>
+      <p>
+        These Terms and Conditions govern your use of the Global Holidays
+        website located at <a href="#">https://example.com</a>. By accessing
+        this website, we assume you accept these Terms and Conditions in full.
+        Do not continue to use Global Holidays' website if you do not accept all
+        of the Terms and Conditions stated on this page.
+      </p>
+
+      <h2>2. Intellectual Property Rights</h2>
+      <p>
+        Other than the content you own, under these Terms, Global Holidays
+        and/or its licensors own all the intellectual property rights and
+        materials contained in this website.
+      </p>
+
+      <h2>3. Restrictions</h2>
+      <p>You are specifically restricted from all of the following:</p>
+      <ul>
+        <li>publishing any website material in any other media;</li>
+        <li>
+          selling, sublicensing and/or otherwise commercializing any website
+          material;
+        </li>
+        <li>publicly performing and/or showing any website material;</li>
+        <li>
+          using this website in any way that is or may be damaging to this
+          website;
+        </li>
+        <li>
+          using this website in any way that impacts user access to this
+          website;
+        </li>
+        <li>
+          using this website contrary to applicable laws and regulations, or in
+          any way may cause harm to the website, or to any person or business
+          entity;
+        </li>
+        <li>
+          engaging in any data mining, data harvesting, data extracting or any
+          other similar activity in relation to this website;
+        </li>
+        <li>using this website to engage in any advertising or marketing.</li>
+      </ul>
+
+      <!-- More sections can be added as per requirement -->
+
+      <h2>4. Severability</h2>
+      <p>
+        If any provision of these Terms and Conditions is found to be invalid
+        under any applicable law, such provisions shall be deleted without
+        affecting the remaining provisions herein.
+      </p>
+
+      <h2>5. Variation of Terms</h2>
+      <p>
+        Global Holidays is permitted to revise these Terms and Conditions at any
+        time as it sees fit, and by using this website you are expected to
+        review these Terms and Conditions on a regular basis.
+      </p>
+
+      <h2>6. Contact Us</h2>
+      <p>
+        If you have any questions about these Terms and Conditions, please
+        contact us via email: <b>info@globalholidays.com</b>
+      </p>
+
+      <p id="last-updated"><b>Last updated</b>: <span id="date"></span></p>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        var date = new Date();
+        var options = {
+          year: "numeric",
+          month: "long",
+          day: "numeric",
+          hour: "numeric",
+          minute: "numeric",
+          second: "numeric",
+          hour12: false,
+        };
+        var formattedDate = date.toLocaleDateString("en-US", options);
+        document.getElementById("date").innerHTML = formattedDate;
+      });
+    </script>
+  </body>
+</html>
