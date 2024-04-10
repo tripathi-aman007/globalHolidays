@@ -686,5 +686,30 @@
       </div>
     </footer>
     <!-- END FOOTER -->
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwL2SSW7sAEIwsTzmRT1S0OW7f-ir3bWsc-HnNPS063ErmHonw91Ei10p8acQgkW6T5/exec";
+      const form = document.querySelector("form");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, {
+          method: "POST",
+          body: new FormData(form),
+        })
+          .then((response) => response.json()) // Parse the response as JSON
+          .then((data) => {
+            if (data.result === "success") {
+              alert("Form submitted successfully!"); // Display success message
+              form.reset(); // Optional: Reset the form after successful submission
+            } else {
+              alert(
+                "There was a problem submitting the form. Please try again later."
+              );
+            }
+          })
+          .catch((error) => console.error("Error", error.message));
+      });
+    </script>
   </body>
 </html>
