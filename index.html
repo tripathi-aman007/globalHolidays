@@ -518,91 +518,7 @@
 
     <!-- TESTIMONIES -->
     <!-- END TESTIMONIES -->
-
-    <!-- FORM -->
-    <h1 class="text-center mt-4 pt-4 mb-0" id="contact">
-      Please Fill the Form
-    </h1>
-    <div class="container mt-0 pt-5 mb-5">
-      <div class="row justify-content-center">
-        <div
-          class="col-md-6"
-          style="box-shadow: 0 14px 16px 10px rgba(67, 3, 214, 0.1)"
-        >
-          <h3 class="text-center text-blue mb-4 mt-2">BECOME MEMBER</h3>
-          <form method="post" action="https://script.google.com/macros/s/AKfycbwL2SSW7sAEIwsTzmRT1S0OW7f-ir3bWsc-HnNPS063ErmHonw91Ei10p8acQgkW6T5/exec">
-            <div class="mb-3">
-              <label for="fullName" class="form-label">Full Name*</label>
-              <input
-                type="text"
-                class="form-control"
-                id="fullName"
-                name="Name"
-                autocomplete="off"
-                placeholder="Enter your full name"
-                required
-              />
-            </div>
-            <div class="mb-3">
-              <label for="contactNo" class="form-label">Contact*</label>
-              <input
-                type="tel"
-                class="form-control"
-                id="contactNo"
-                name="Contact"
-                autocomplete="off"
-                placeholder="Enter your contact number"
-                required
-              />
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email*</label>
-              <input
-                type="email"
-                class="form-control"
-                id="email"
-                name="Email"
-                autocomplete="off"
-                placeholder="Enter your email"
-                required
-              />
-            </div>
-            <div class="mb-3">
-              <label for="city" class="form-label">City*</label>
-              <input
-                type="text"
-                class="form-control"
-                id="city"
-                name="City"
-                autocomplete="off"
-                placeholder="Enter your city"
-                required
-              />
-            </div>
-            <label for="query" class="form-label">Message*</label>
-            <div class="mb-3">
-              <textarea
-                class="form-control"
-                id="query"
-                autocomplete="off"
-                placeholder="Your query (70 words max)*"
-                rows="4"
-                name="Message"
-                required
-                maxlength="350"
-              ></textarea>
-            </div>
-            <div class="text-center mb-2">
-              <button type="submit" class="btn btn-primary explore-btn">
-                Submit
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-    <!-- END FORM -->
-
+    
     <!-- FOOTER -->
     <footer class="bg-dark text-white py-1">
       <div class="container">
@@ -686,30 +602,6 @@
       </div>
     </footer>
     <!-- END FOOTER -->
-    <script>
-      const scriptURL =
-        "https://script.google.com/macros/s/AKfycbwL2SSW7sAEIwsTzmRT1S0OW7f-ir3bWsc-HnNPS063ErmHonw91Ei10p8acQgkW6T5/exec";
-      const form = document.querySelector("form");
 
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
-        fetch(scriptURL, {
-          method: "POST",
-          body: new FormData(form),
-        })
-          .then((response) => response.json()) // Parse the response as JSON
-          .then((data) => {
-            if (data.result === "success") {
-              alert("Form submitted successfully!"); // Display success message
-              form.reset(); // Optional: Reset the form after successful submission
-            } else {
-              alert(
-                "There was a problem submitting the form. Please try again later."
-              );
-            }
-          })
-          .catch((error) => console.error("Error", error.message));
-      });
-    </script>
   </body>
 </html>
